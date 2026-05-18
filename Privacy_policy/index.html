@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Изготовление вывесок</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wr">
+        <div class="header-inner">
+          <a href="/" class="logos-wr">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 53">
+              <path
+                fill="#2A2850"
+                fill-rule="evenodd"
+                d="M0.41 27.63c0 3.62-.25 10.23 1.21 13.5.45 1.01 1.61 2.33 2.98 1.25 2.65-2.09 2.23-13.18 2.19-17.3-.03-3.08.05-6.41-.3-9.45-.24-2.09-1.21-7.15-3.92-5.42-2.65 1.7-2.19 13.53-2.18 17.42zm18.31-4.46c0 4.34-.88 22.2 4.03 19.34 2.79-1.63 2.38-12.66 2.37-16.58-.01-3.88.3-13.46-2.08-15.57-2.34-2.09-3.64 2.37-3.94 4.32-.41 2.66-.39 5.75-.38 8.5zm-9.2-20.02c.48 1.75 1.04 3.12 1.46 5.04 1.44 6.62 1.4 23.88.83 30.52-.51 5.91-.78 5.72-2.21 10.81 2.48.95 4.49 2.2 7.7 2.56-4.34-8.08-3.89-16.26-3.88-25.73.01-6.82-.24-16.84 2.66-23.25.45-.99.96-1.7 1.32-2.45-3.96.05-7.73 2.42-7.87 2.5zm16.99 48.9c2.02-.23 3.51-1.04 5.23-1.45l.01-48.48c-1.73-.4-3.27-1.35-5.34-1.43 1.09 2.22 1.3 1.83 2.23 4.93 1.88 6.28 1.8 13.97 1.78 20.53-.02 9.31.31 18.65-3.9 25.9zM43.05 40.08c.39-1.5.16-8.21.16-10.27h-6.29l-.02 17.74c1.42-.67 5.7-5.78 6.15-7.47zm.01-27.27c-.45-1.79-4.67-6.86-6.04-7.66l.03 17.53h6.16c.01-2.1.26-8.27-.15-9.87z"
+              />
+              <text
+                x="53"
+                y="29"
+                font-family="Rubik, sans-serif"
+                font-weight="700"
+                font-size="0"
+                dominant-baseline="middle"
+                letter-spacing="0.8"
+              >
+                <tspan fill="#9CA3AF" font-size="36">OOH</tspan>
+                <tspan fill="#2A2850" font-size="36" font-weight="800">
+                  MEDIA
+                </tspan>
+              </text>
+            </svg>
+          </a>
+          <div class="nav">
+            <nav class="nav-links">
+              <a href="/vacancy" class="nav-link gradient">наши вакансии</a>
+              <a href="#" class="nav-link">info@ooh-media.ru</a>
+              <a href="#" class="nav-link">8 (844) 232-55-00</a>
+            </nav>
+            <div class="phone-btn-wr">
+              <div data-modal="callback" class="phone-btn">
+                <img
+                  src="/img/phone-svgrepo-com 1.svg"
+                  width="36"
+                  height="36"
+                  alt="Phone icon"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Burger Menu -->
+          <div class="m-menu">
+            <input type="checkbox" id="menu-toggle-checkbox" />
+            <label for="menu-toggle-checkbox" class="menu-toggle">☰</label>
+            <label for="menu-toggle-checkbox" class="menu-overlay"></label>
+            <div class="mobile-menu">
+              <div class="header-inner">
+                <a href="/" class="logos-wr">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 53">
+                    <path
+                      fill="#2A2850"
+                      fill-rule="evenodd"
+                      d="M0.41 27.63c0 3.62-.25 10.23 1.21 13.5.45 1.01 1.61 2.33 2.98 1.25 2.65-2.09 2.23-13.18 2.19-17.3-.03-3.08.05-6.41-.3-9.45-.24-2.09-1.21-7.15-3.92-5.42-2.65 1.7-2.19 13.53-2.18 17.42zm18.31-4.46c0 4.34-.88 22.2 4.03 19.34 2.79-1.63 2.38-12.66 2.37-16.58-.01-3.88.3-13.46-2.08-15.57-2.34-2.09-3.64 2.37-3.94 4.32-.41 2.66-.39 5.75-.38 8.5zm-9.2-20.02c.48 1.75 1.04 3.12 1.46 5.04 1.44 6.62 1.4 23.88.83 30.52-.51 5.91-.78 5.72-2.21 10.81 2.48.95 4.49 2.2 7.7 2.56-4.34-8.08-3.89-16.26-3.88-25.73.01-6.82-.24-16.84 2.66-23.25.45-.99.96-1.7 1.32-2.45-3.96.05-7.73 2.42-7.87 2.5zm16.99 48.9c2.02-.23 3.51-1.04 5.23-1.45l.01-48.48c-1.73-.4-3.27-1.35-5.34-1.43 1.09 2.22 1.3 1.83 2.23 4.93 1.88 6.28 1.8 13.97 1.78 20.53-.02 9.31.31 18.65-3.9 25.9zM43.05 40.08c.39-1.5.16-8.21.16-10.27h-6.29l-.02 17.74c1.42-.67 5.7-5.78 6.15-7.47zm.01-27.27c-.45-1.79-4.67-6.86-6.04-7.66l.03 17.53h6.16c.01-2.1.26-8.27-.15-9.87z"
+                    />
+                    <text
+                      x="56"
+                      y="29"
+                      font-family="Rubik, sans-serif"
+                      font-weight="700"
+                      font-size="0"
+                      dominant-baseline="middle"
+                      letter-spacing="0.8"
+                    >
+                      <tspan fill="#9CA3AF" font-size="33">OOH</tspan>
+                      <tspan fill="#2A2850" font-size="33" font-weight="800">
+                        MEDIA
+                      </tspan>
+                    </text>
+                  </svg>
+                </a>
+              </div>
+
+              <nav>
+                <ul>
+                  <li><a href="/narujnaya-reklama">Наружная реклама</a></li>
+                  <li><a href="/reklama-v-metro">Реклама в метро</a></li>
+                  <li><a href="/promo-outsource">Аутсорсинг промоутеров</a></li>
+                  <li><a href="/reklamnye-vyveski">Изготовление вывесок</a></li>
+                  <li><a href="/portfolio">Кейсы</a></li>
+                  <li><a href="/faq">Часто задаваемые вопросы</a></li>
+                  <li><a href="/vacancy">Наши вакансии</a></li>
+                </ul>
+                <hr />
+                <ul class="contacts-menu">
+                  <li>
+                    <a href="/req" class="nav-link gradient">Оставить заявку</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">info@ooh-media.ru</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">8 (844) 232-55-00</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu Tabs -->
+    <div class="menu-tabs">
+      <div class="menu-grid">
+        <a href="/narujnaya-reklama" class="menu-item">Наружная реклама</a>
+        <a href="/reklama-v-metro" class="menu-item">Реклама в метро</a>
+        <a href="/promo-outsource" class="menu-item">Аутсорсинг промоутеров</a>
+        <a href="/reklamnye-vyveski" class="menu-item">Изготовление вывесок</a>
+      </div>
+    </div>
+
+    <!-- экран 1 -->
+
+    <section class="hero-wr">
+      <div class="hero-content">
+        <div class="hero-line1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="5 -2 780 43"
+            preserveAspectRatio="xMidYMid meet"
+            class="hero-text1"
+          >
+            <defs>
+              <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #fe8c0a; stop-opacity: 1"
+                />
+                <stop
+                  offset="50%"
+                  style="stop-color: #ec8906; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #ed5e89; stop-opacity: 1"
+                />
+              </linearGradient>
+            </defs>
+            <text
+              x="5"
+              y="62.5"
+              font-family="Rubik, sans-serif"
+              font-weight="bold"
+              font-size="122"
+              text-transform="uppercase"
+              fill="url(#myGradient)"
+            >
+              ПОЛИТИКА
+            </text>
+          </svg>
+
+          <div class="hero-boxes">
+            <div class="hero-box hero-box-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="182"
+                height="122"
+                viewBox="0 0 182 122"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.154314 113.315C0.187587 128.612 -0.854576 156.504 5.30871 170.282C7.21336 174.54 12.1262 180.131 17.937 175.565C29.1694 166.738 27.3865 119.941 27.2326 102.566C27.1175 89.564 27.4482 75.4997 25.9755 62.6648C24.9646 53.8537 20.8483 32.4753 9.38015 39.8047C-1.85392 46.9839 0.119305 96.8841 0.154314 113.315Z"
+                  fill="#E3E3E3"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M77.7037 94.5044C77.7077 112.811 73.995 188.171 94.7989 176.079C106.598 169.22 104.852 122.658 104.826 106.149C104.799 89.7895 106.07 49.3614 96.0303 40.4356C86.1052 31.6107 80.6187 50.4352 79.3647 58.5987C77.6374 69.844 77.7011 82.8683 77.7037 94.5044Z"
+                  fill="#E3E3E3"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M38.7617 10.0226C40.8061 17.4223 43.1604 23.2011 44.9337 31.3139C51.0403 59.2484 50.8583 132.09 48.4438 160.078C46.2929 185.019 45.1533 184.217 39.0892 205.682C49.5829 209.685 58.1103 214.949 71.6755 216.5C53.3138 182.399 55.2057 147.902 55.2511 107.941C55.2838 79.1795 54.1908 36.9041 66.491 9.85014C68.3913 5.67064 70.5717 2.69863 72.0811 -0.5C55.3281 -0.300482 39.3482 9.7178 38.7617 10.0226Z"
+                  fill="#E3E3E3"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M110.749 216.335C119.296 215.372 125.591 211.964 132.865 210.226L132.885 5.66625C125.575 3.9963 119.048 -0.0122274 110.277 -0.376953C114.911 9.00212 115.769 7.33332 119.7 20.4378C127.648 46.9362 127.308 79.3717 127.24 107.045C127.143 146.328 128.556 185.75 110.749 216.335Z"
+                  fill="#E3E3E3"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M179.703 50.7965C177.78 43.267 159.934 21.8626 154.109 18.5068L154.241 92.4865H180.317C180.362 83.6114 181.423 57.5827 179.703 50.7965Z"
+                  fill="#E3E3E3"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M179.877 78.6509H155.242L155.11 18.5063C153.939 17.2071 153.851 71.6498 154.521 78.8853C159.169 80.2352 175.166 79.8791 180.443 79.1701L179.877 52.9999C178.962 49.0951 179.566 51.6923 178.349 50.7262"
+                  fill="#E3E3E3"
+                />
+              </svg>
+            </div>
+            <div class="hero-box hero-box-3">
+              <img src="/img/folder.png" alt="" class="location" />
+            </div>
+          </div>
+        </div>
+        <div class="hero-line1__mobile">
+          <h3>ПОЛИТИКА</h3>
+        </div>
+        <div class="hero-line2">
+          <div class="hero-line2__bottom">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="72"
+              height="86"
+              viewBox="0 0 72 86"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.0609436 45.1066C0.0740841 51.1688 -0.3375 62.2229 2.09658 67.6835C2.84879 69.3707 4.78902 71.5868 7.08392 69.777C11.5199 66.2788 10.8158 47.7324 10.755 40.8468C10.7096 35.6937 10.8402 30.1199 10.2586 25.0332C9.85931 21.5413 8.23366 13.0687 3.70452 15.9735C-0.732172 18.8187 0.0471174 38.5948 0.0609436 45.1066Z"
+                fill="#2A2850"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M30.6864 37.6515C30.688 44.9065 29.2218 74.773 37.4379 69.9806C42.0976 67.2623 41.4082 48.8091 41.3978 42.2663C41.3873 35.7829 41.8891 19.7607 37.9242 16.2233C34.0045 12.7258 31.8376 20.1862 31.3424 23.4215C30.6603 27.8782 30.6854 33.0399 30.6864 37.6515Z"
+                fill="#2A2850"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.3105 4.17023C16.1179 7.10285 17.0477 9.39307 17.7481 12.6083C20.1597 23.6791 20.0879 52.5472 19.1343 63.6393C18.2849 73.5235 17.8348 73.2057 15.4399 81.7127C19.5842 83.2991 22.9519 85.3854 28.3093 86C21.0576 72.4853 21.8048 58.8139 21.8228 42.9765C21.8357 31.578 21.404 14.8238 26.2617 4.1019C27.0122 2.44551 27.8733 1.26766 28.4695 0C21.8532 0.0790716 15.5422 4.04945 15.3105 4.17023Z"
+                fill="#2A2850"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M43.7369 85.9347C47.1125 85.5532 49.5985 84.2024 52.4713 83.5137L52.4791 2.44383C49.5925 1.78201 47.0147 0.193374 43.5508 0.0488281C45.3809 3.76588 45.7198 3.10451 47.2722 8.29799C50.4112 18.7997 50.2769 31.6543 50.2499 42.6216C50.2115 58.1898 50.7697 73.8135 43.7369 85.9347Z"
+                fill="#2A2850"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M71.365 65.9314C72.0177 63.417 71.6261 52.2017 71.6303 48.7588H61.1195L61.0781 78.4207C63.4571 77.3068 70.6148 68.7611 71.365 65.9314Z"
+                fill="#2A2850"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M70.6605 20.3295C69.9009 17.3455 62.853 8.86265 60.5527 7.53271L60.6048 36.8518H70.9029C70.9208 33.3345 71.3396 23.019 70.6605 20.3295Z"
+                fill="#2A2850"
+              />
+            </svg>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="3.5 12 510 43"
+            preserveAspectRatio="xMidYMid meet"
+            class="hero-text2"
+          >
+            <text
+              x="10"
+              y="41.5"
+              font-family="Rubik, sans-serif"
+              font-weight="bold"
+              font-size="38"
+              text-transform="uppercase"
+              fill="#2A2850"
+            >
+              КОНФИДЕНЦИАЛЬНОСТИ
+            </text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- "Экран 2 (Общие положения)" -->
+    <section class="general__policy">
+      <div class="general__provisions">
+        <div class="general__provisions__top">
+          <div class="general__policy__marker">1</div>
+          <h3>Общие положения</h3>
+        </div>
+        <div class="general__provisions__wr">
+          <div class="general__policy__text">
+            Настоящая политика обработки персональных данных составлена в
+            соответствии с требованиями Федерального закона от 27.07.2006.
+            №152-ФЗ «О персональных данных» и определяет порядок обработки
+            персональных данных и меры по обеспечению безопасности персональных
+            данных, предпринимаемые ООО "АУТ ОФ ХОУМ МЕДИА" (далее – Оператор).
+          </div>
+        </div>
+        <div class="general__provisions__bottom">
+          <div class="general__provisions__points">
+            <div class="general__marker__points">1.1</div>
+            <h3>
+              Оператор ставит своей важнейшей целью и условием осуществления
+              своей деятельности соблюдение прав и свобод человека и гражданина
+              при обработке его персональных данных, в том числе защиты прав на
+              неприкосновенность частной жизни, личную и семейную тайну.
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">1.2</div>
+            <h3>
+              Настоящая политика Оператора в отношении обработки персональных
+              данных (далее – Политика) применяется ко всей информации, которую
+              Оператор может получить о посетителях веб-сайта
+              <a
+                href="https://ooh-media.ru/"
+                class="general__provisions__a"
+                target="_blank"
+                >ooh-media.ru</a
+              >
+            </h3>
+          </div>
+        </div>
+      </div>
+      <!--Блок "Основные понятия"-->
+      <div class="basic__concepts">
+        <div class="general__provisions__top">
+          <div class="general__policy__marker">2</div>
+          <h3>Основные понятия, используемые в Политике</h3>
+        </div>
+        <div class="general__provisions__bottom">
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.1</div>
+            <h3>
+              <span class="highlight"
+                >Автоматизированная обработка персональных данных</span
+              >
+              — обработка персональных данных с помощью средств вычислительной
+              техники;
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.2</div>
+            <h3>
+              <span Блокированиеpan class="highlight"
+                >Блокирование персональных данных</span
+              >
+              — временное прекращение обработки персональных данных (за
+              исключением случаев, если обработка необходима для уточнения
+              персональных данных);
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.3</div>
+            <h3>
+              <span class="highlight">Веб-сайт</span> — совокупность графических
+              и информационных материалов, а также программ для ЭВМ и баз
+              данных, обеспечивающих их доступность в сети интернет по сетевому
+              адресу
+              <a
+                href="https://ooh-media.ru/"
+                class="general__provisions__a"
+                target="_blank"
+                >ooh-media.ru</a
+              >
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.4</div>
+            <h3>
+              <span class="highlight"
+                >Информационная система персональных данных</span
+              >
+              — совокупность содержащихся в базах данных персональных данных, и
+              обеспечивающих их обработку информационных технологий и
+              технических средств;
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.5</div>
+            <h3>
+              <span class="highlight">Обезличивание персональных данных</span> —
+              действия, в результате которых невозможно определить без
+              использования дополнительной информации принадлежность
+              персональных данных конкретному Пользователю или иному субъекту
+              персональных данных;
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.6</div>
+            <h3>
+              <span class="highlight">Обработка персональных данных</span> —
+              любое действие (операция) или совокупность действий (операций),
+              совершаемых с использованием средств автоматизации или без
+              использования таких средств с персональными данными, включая сбор,
+              запись, систематизацию, накопление, хранение, уточнение
+              (обновление, изменение), извлечение, использование, передачу
+              (распространение, предоставление, доступ), обезличивание,
+              блокирование, удаление, уничтожение персональных данных;
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.7</div>
+            <h3>
+              <span class="highlight">Оператор</span> — государственный орган,
+              муниципальный орган, юридическое или физическое лицо,
+              самостоятельно или совместно с другими лицами организующие и (или)
+              осуществляющие обработку персональных данных, а также определяющие
+              цели обработки персональных данных, состав персональных данных,
+              подлежащих обработке, действия (операции), совершаемые с
+              персональными данными;
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.8</div>
+            <h3>
+              <span class="highlight">Персональные данные</span> — любая
+              информация, относящаяся прямо или косвенно к определенному или
+              определяемому Пользователю веб-сайта
+              <a
+                href="https://ooh-media.ru/"
+                class="general__provisions__a"
+                target="_blank"
+                >ooh-media.ru</a
+              >
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.9</div>
+            <h3>
+              <span class="highlight">Пользователь</span> — любой посетитель
+              веб-сайта
+              <a
+                href="https://ooh-media.ru/"
+                class="general__provisions__a"
+                target="_blank"
+                >ooh-media.ru</a
+              >
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.10</div>
+            <h3>
+              <span class="highlight">Предоставление персональных данных</span>
+              — действия, направленные на раскрытие персональных данных
+              определенному лицу или определенному кругу лиц;
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.11</div>
+            <h3>
+              <span class="highlight">Распространение персональных данных</span>
+              — любые действия, направленные на раскрытие персональных данных
+              неопределенному кругу лиц (передача персональных данных) или на
+              ознакомление с персональными данными неограниченного круга лиц, в
+              том числе обнародование персональных данных в средствах массовой
+              информации, размещение в информационно-телекоммуникационных сетях
+              или предоставление доступа к персональным данным каким-либо иным
+              способом;
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.12</div>
+            <h3>
+              <span class="highlight"
+                >Трансграничная передача персональных данных</span
+              >
+              — передача персональных данных на территорию иностранного
+              государства органу власти иностранного государства, иностранному
+              физическому или иностранному юридическому лицу;
+            </h3>
+          </div>
+          <div class="general__provisions__points">
+            <div class="general__marker__points">2.13</div>
+            <h3>
+              <span class="highlight">Уничтожение персональных данных</span> —
+              любые действия, в результате которых персональные данные
+              уничтожаются безвозвратно с невозможностью дальнейшего
+              восстановления содержания персональных данных в информационной
+              системе персональных данных и (или) уничтожаются материальные
+              носители персональных данных.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
