@@ -1,0 +1,174 @@
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Фиксированное положение на экране */
+  z-index: 1000; /* Убедитесь, что оно поверх всего остального */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Разрешаем прокрутку, если контент не помещается */
+  background-color: rgba(0, 0, 0, 0.7); /* Темный полупрозрачный фон */
+  backdrop-filter: blur(
+    5px
+  ); /* Размытие фона (опционально, поддерживается не всеми браузерами) */
+  display: flex; /* Используем Flexbox для центрирования содержимого */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+}
+
+/* Содержимое модального окна */
+.modal-content {
+  background-color: #fefefe; /* Белый фон содержимого */
+  margin: auto; /* Центрирование */
+  padding: 0; /* Отступы убираем, так как они будут внутри */
+  border-radius: 15px; /* Закругленные углы */
+  width: 90%; /* Ширина окна (адаптивная) */
+  max-width: 900px; /* Максимальная ширина */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Тень */
+  overflow: hidden; /* Обрезаем все, что выходит за пределы */
+  position: relative; /* Для позиционирования кнопки закрытия */
+}
+
+/* Заголовок модального окна */
+.modal-header {
+  padding: 10px 20px;
+  background-color: #e9e9e9; /* Серый фон для заголовка */
+  display: flex;
+  justify-content: space-between; /* Располагаем заголовок и кнопку по краям */
+  align-items: center;
+  border-top-left-radius: 15px; /* Закругляем углы только верхней части */
+  border-top-right-radius: 15px;
+}
+
+.modal-title {
+  font-size: 1.1em;
+  color: #555;
+  margin: 0;
+}
+
+/* Кнопка закрытия (крестик) */
+.close-button {
+  color: #aaa;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Основное тело модального окна */
+.modal-body {
+  display: flex;
+  padding: 30px; /* Отступы внутри основного контента */
+  background-color: #f9f9f9; /* Светлый фон для тела */
+}
+
+.modal-left-side {
+  flex: 1; /* Занимает 1 часть пространства */
+  padding-right: 20px; /* Отступ справа от текста */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Выравниваем контент по центру */
+}
+
+.modal-logo img {
+  max-width: 180px; /* Максимальная ширина лого */
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.modal-text-block {
+  flex-grow: 1; /* Позволяем блоку с текстом занимать доступное место */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-subtitle {
+  font-size: 1.3em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.modal-main-text {
+  font-size: 4.5em; /* Большой "СПАСИБО!" */
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    #ff8c00,
+    #ff69b4
+  ); /* Оранжево-розовый градиент */
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Делаем текст прозрачным, чтобы видеть градиент */
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 0.9; /* Уменьшаем высоту строки для лучшего вида */
+}
+
+.modal-description {
+  font-size: 1.1em;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.modal-right-side {
+  flex: 1; /* Занимает 1 часть пространства */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-right-side img {
+  max-width: 100%; /* Изображение будет адаптивным */
+  height: auto;
+  border-radius: 0 0 15px 0; /* Скругляем только нижний правый угол, если нужно */
+}
+
+/* ====================== END MODAL STYLES ====================== */
+
+/* ====================== Adjustments for small screens ====================== */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+  }
+  .modal-body {
+    flex-direction: column; /* Блоки располагаются друг под другом на малых экранах */
+    padding: 20px;
+  }
+  .modal-left-side {
+    padding-right: 0;
+    margin-bottom: 20px; /* Отступ между левой и правой частью */
+    order: 2; /* Ставим текст после изображения */
+  }
+  .modal-right-side {
+    order: 1; /* Изображение будет первым */
+    margin-bottom: 20px;
+  }
+  .modal-main-text {
+    font-size: 3em; /* Уменьшаем размер "СПАСИБО!" на мобильных */
+  }
+  .modal-logo img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-title {
+    font-size: 1em;
+  }
+  .close-button {
+    font-size: 20px;
+  }
+  .modal-main-text {
+    font-size: 2.5em;
+  }
+  .modal-description {
+    font-size: 1em;
+  }
+}
