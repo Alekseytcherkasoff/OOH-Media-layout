@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "../OOH Media"
+    },
+    {
+      "path": "../outsourcing-of-promoters"
+    },
+    {
+      "path": "."
+    },
+    {
+      "path": "../modaltest"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "modaltest"
+  }
+}
