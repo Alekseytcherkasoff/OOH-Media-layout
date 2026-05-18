@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Наши вакансии</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wr">
+        <div class="header-inner">
+          <a href="/" class="logos-wr">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 53">
+              <path
+                fill="#2A2850"
+                fill-rule="evenodd"
+                d="M0.41 27.63c0 3.62-.25 10.23 1.21 13.5.45 1.01 1.61 2.33 2.98 1.25 2.65-2.09 2.23-13.18 2.19-17.3-.03-3.08.05-6.41-.3-9.45-.24-2.09-1.21-7.15-3.92-5.42-2.65 1.7-2.19 13.53-2.18 17.42zm18.31-4.46c0 4.34-.88 22.2 4.03 19.34 2.79-1.63 2.38-12.66 2.37-16.58-.01-3.88.3-13.46-2.08-15.57-2.34-2.09-3.64 2.37-3.94 4.32-.41 2.66-.39 5.75-.38 8.5zm-9.2-20.02c.48 1.75 1.04 3.12 1.46 5.04 1.44 6.62 1.4 23.88.83 30.52-.51 5.91-.78 5.72-2.21 10.81 2.48.95 4.49 2.2 7.7 2.56-4.34-8.08-3.89-16.26-3.88-25.73.01-6.82-.24-16.84 2.66-23.25.45-.99.96-1.7 1.32-2.45-3.96.05-7.73 2.42-7.87 2.5zm16.99 48.9c2.02-.23 3.51-1.04 5.23-1.45l.01-48.48c-1.73-.4-3.27-1.35-5.34-1.43 1.09 2.22 1.3 1.83 2.23 4.93 1.88 6.28 1.8 13.97 1.78 20.53-.02 9.31.31 18.65-3.9 25.9zM43.05 40.08c.39-1.5.16-8.21.16-10.27h-6.29l-.02 17.74c1.42-.67 5.7-5.78 6.15-7.47zm.01-27.27c-.45-1.79-4.67-6.86-6.04-7.66l.03 17.53h6.16c.01-2.1.26-8.27-.15-9.87z"
+              />
+              <text
+                x="53"
+                y="29"
+                font-family="Rubik, sans-serif"
+                font-weight="700"
+                font-size="0"
+                dominant-baseline="middle"
+                letter-spacing="0.8"
+              >
+                <tspan fill="#9CA3AF" font-size="36">OOH</tspan>
+                <tspan fill="#2A2850" font-size="36" font-weight="800">
+                  MEDIA
+                </tspan>
+              </text>
+            </svg>
+          </a>
+          <div class="nav">
+            <nav class="nav-links">
+              <a href="/vacancy" class="nav-link gradient">наши вакансии</a>
+              <a href="#" class="nav-link">info@ooh-media.ru</a>
+              <a href="#" class="nav-link">8 (844) 232-55-00</a>
+            </nav>
+            <div class="phone-btn-wr">
+              <div data-modal="callback" class="phone-btn">
+                <img
+                  src="/img/phone-svgrepo-com 1.svg"
+                  width="36"
+                  height="36"
+                  alt="Phone icon"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Burger Menu -->
+          <div class="m-menu">
+            <input type="checkbox" id="menu-toggle-checkbox" />
+            <label for="menu-toggle-checkbox" class="menu-toggle">☰</label>
+            <label for="menu-toggle-checkbox" class="menu-overlay"></label>
+            <div class="mobile-menu">
+              <div class="header-inner">
+                <a href="/" class="logos-wr">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 53">
+                    <path
+                      fill="#2A2850"
+                      fill-rule="evenodd"
+                      d="M0.41 27.63c0 3.62-.25 10.23 1.21 13.5.45 1.01 1.61 2.33 2.98 1.25 2.65-2.09 2.23-13.18 2.19-17.3-.03-3.08.05-6.41-.3-9.45-.24-2.09-1.21-7.15-3.92-5.42-2.65 1.7-2.19 13.53-2.18 17.42zm18.31-4.46c0 4.34-.88 22.2 4.03 19.34 2.79-1.63 2.38-12.66 2.37-16.58-.01-3.88.3-13.46-2.08-15.57-2.34-2.09-3.64 2.37-3.94 4.32-.41 2.66-.39 5.75-.38 8.5zm-9.2-20.02c.48 1.75 1.04 3.12 1.46 5.04 1.44 6.62 1.4 23.88.83 30.52-.51 5.91-.78 5.72-2.21 10.81 2.48.95 4.49 2.2 7.7 2.56-4.34-8.08-3.89-16.26-3.88-25.73.01-6.82-.24-16.84 2.66-23.25.45-.99.96-1.7 1.32-2.45-3.96.05-7.73 2.42-7.87 2.5zm16.99 48.9c2.02-.23 3.51-1.04 5.23-1.45l.01-48.48c-1.73-.4-3.27-1.35-5.34-1.43 1.09 2.22 1.3 1.83 2.23 4.93 1.88 6.28 1.8 13.97 1.78 20.53-.02 9.31.31 18.65-3.9 25.9zM43.05 40.08c.39-1.5.16-8.21.16-10.27h-6.29l-.02 17.74c1.42-.67 5.7-5.78 6.15-7.47zm.01-27.27c-.45-1.79-4.67-6.86-6.04-7.66l.03 17.53h6.16c.01-2.1.26-8.27-.15-9.87z"
+                    />
+                    <text
+                      x="56"
+                      y="29"
+                      font-family="Rubik, sans-serif"
+                      font-weight="700"
+                      font-size="0"
+                      dominant-baseline="middle"
+                      letter-spacing="0.8"
+                    >
+                      <tspan fill="#9CA3AF" font-size="33">OOH</tspan>
+                      <tspan fill="#2A2850" font-size="33" font-weight="800">
+                        MEDIA
+                      </tspan>
+                    </text>
+                  </svg>
+                </a>
+              </div>
+
+              <nav>
+                <ul>
+                  <li><a href="/narujnaya-reklama">Наружная реклама</a></li>
+                  <li><a href="/reklama-v-metro">Реклама в метро</a></li>
+                  <li><a href="/promo-outsource">Аутсорсинг промоутеров</a></li>
+                  <li><a href="/reklamnye-vyveski">Изготовление вывесок</a></li>
+                  <li><a href="/portfolio">Кейсы</a></li>
+                  <li><a href="/faq">Часто задаваемые вопросы</a></li>
+                  <li><a href="/vacancy">Наши вакансии</a></li>
+                </ul>
+                <hr />
+                <ul class="contacts-menu">
+                  <li>
+                    <a href="/req" class="nav-link gradient">Оставить заявку</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">info@ooh-media.ru</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">8 (844) 232-55-00</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu Tabs -->
+    <div class="menu-tabs">
+      <div class="menu-grid">
+        <a href="/narujnaya-reklama" class="menu-item">Наружная реклама</a>
+        <a href="/reklama-v-metro" class="menu-item">Реклама в метро</a>
+        <a href="/promo-outsource" class="menu-item">Аутсорсинг промоутеров</a>
+        <a href="/reklamnye-vyveski" class="menu-item">Изготовление вывесок</a>
+      </div>
+    </div>
+
+    <!-- экран 1 (ванаксии) -->
+    <section class="b-intro">
+      <div class="b-intro__wr">
+        <div class="b-intro__wr__logo">
+          <svg
+            width="133"
+            height="123"
+            viewBox="0 0 133 123"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_552_8121)">
+              <rect
+                width="133"
+                height="123"
+                rx="15"
+                fill="url(#paint0_linear_552_8121)"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.5404 66.8902C17.5583 75.2082 16.9956 90.3755 20.3235 97.8678C21.352 100.183 24.0047 103.224 27.1423 100.74C33.2073 95.9405 32.2447 70.4931 32.1616 61.0454C32.0994 53.975 32.278 46.3271 31.4828 39.3478C30.9369 34.5565 28.7143 22.9313 22.5219 26.9169C16.456 30.8208 17.5215 57.9555 17.5404 66.8902Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M59.4108 56.6614C59.413 66.6161 57.4083 107.596 68.6416 101.02C75.0125 97.2903 74.0698 71.9708 74.0556 62.9934C74.0413 54.0976 74.7274 32.1137 69.3065 27.26C63.9473 22.4612 60.9848 32.6975 60.3077 37.1367C59.3751 43.2517 59.4094 50.334 59.4108 56.6614Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M38.3906 10.7219C39.4945 14.7458 40.7657 17.8882 41.7232 22.2997C45.0206 37.4899 44.9223 77.0997 43.6186 92.319C42.4572 105.881 41.8418 105.445 38.5675 117.117C44.2336 119.294 48.8381 122.157 56.1628 123C46.2482 104.457 47.2697 85.6981 47.2943 63.9677C47.3119 48.328 46.7217 25.3396 53.3633 10.6282C54.3894 8.35546 55.5668 6.73935 56.3818 5C47.3358 5.10849 38.7073 10.5562 38.3906 10.7219Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M77.2545 122.91C81.8697 122.387 85.2686 120.533 89.1963 119.589L89.2071 8.35306C85.2603 7.44497 81.736 5.26522 77 5.06689C79.5021 10.167 79.9655 9.25958 82.088 16.3855C86.3797 30.7948 86.1961 48.4325 86.1592 63.4807C86.1067 84.8417 86.8699 106.279 77.2545 122.91Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M115.029 95.4633C115.922 92.0133 115.386 76.6249 115.392 71.9009H101.021L100.965 112.6C104.217 111.071 114.004 99.3458 115.029 95.4633Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M114.972 33.0294C113.851 28.901 103.449 17.1651 100.055 15.3252L100.132 55.8877H115.33C115.356 51.0215 115.974 36.7502 114.972 33.0294Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <linearGradient
+                id="paint0_linear_552_8121"
+                x1="0"
+                y1="61.5"
+                x2="133"
+                y2="61.5"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FE8C0A" />
+                <stop offset="1" stop-color="#ED5E89" />
+              </linearGradient>
+              <clipPath id="clip0_552_8121">
+                <rect width="133" height="123" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="b-intro__wr">
+        <div class="b-intro__wr__h">
+          <h2>НАШИ ВАКАНСИИ</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- экран 2 (перечень вакансий) -->
+
+    <section class="vacancies__wr">
+      <div class="vacancies__block">
+        <div class="vacancies__block__unific">
+          <div class="vacancies__block__text">
+            <p>Бухгалтер</p>
+          </div>
+          <div class="vacancies__block__fill">
+            <div class="vacancies__block__img">
+              <img src="/img/accountant.png" alt="Бухгалтер" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vacancies__block">
+        <div class="vacancies__block__unific">
+          <div class="vacancies__block__text">
+            <p>Менеджер по медиапланированию</p>
+          </div>
+          <div class="vacancies__block__fill">
+            <div class="vacancies__block__img">
+              <img src="/img/media__planning.png" alt="Медиапланировщик" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vacancies__block">
+        <div class="vacancies__block__unific">
+          <div class="vacancies__block__text">
+            <p>Менеджер по размещению</p>
+          </div>
+          <div class="vacancies__block__fill">
+            <div class="vacancies__block__img">
+              <img
+                src="/img/Accommodation__manager.png"
+                alt="Менеджер по размещению"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vacancies__block">
+        <div class="vacancies__block__unific">
+          <div class="vacancies__block__text">
+            <p>
+              Менеджер<br />
+              по продажам наружной рекламы
+            </p>
+          </div>
+          <div class="vacancies__block__fill">
+            <div class="vacancies__block__img">
+              <img src="/img/Sales__manager.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div id="footer">
+        <div class="footer-title">
+          <h3>
+            Хотите заказать наружную рекламу? Оставьте заявку —<br />
+            и мы поможем привлечь новых клиентов!
+          </h3>
+        </div>
+
+        <div class="footer-wr">
+          <div class="footer-contacts-content">
+            <div class="work-schedule">
+              <div class="work-schedule-header">ГРАФИК РАБОТЫ:</div>
+              <div class="info-section">
+                <div>Пн. – Пт. с 9:00 до 18:00</div>
+                <div>г. Волгоград, ул Академическая, влд. 14/1, офис 306</div>
+                <div>
+                  <a href="/vacancy" style="text-decoration: none"
+                    >Наши вакансии</a
+                  >
+                </div>
+                <div class="link-item">
+                  <a href="/policy" style="text-decoration: none"
+                    >Политика конфиденциальности</a
+                  >
+                </div>
+              </div>
+              <div class="info-section-mobile">
+                <div>
+                  Пн. – Пт.<br />
+                  с 9:00 до 18:00
+                </div>
+                <div>г. Волгоград, ул Академическая, влд. 14/1, офис 306</div>
+              </div>
+            </div>
+            <div class="footer-services">
+              <a href="/narujnaya-reklama">Наружная реклама</a>
+              <a href="/reklama-v-metro">Реклама в метро</a>
+              <a href="/promo-outsource">Аутсорсинг промоутеров</a>
+              <a href="/reklamnye-vyveski">Изготовление вывесок</a>
+            </div>
+            <div class="footer-services-mobile">
+              <div>
+                <a href="/narujnaya-reklama" style="text-decoration: none"
+                  >Наружная реклама</a
+                >
+                <a href="/promo-outsource" style="text-decoration: none"
+                  >Аутсорсинг промоутеров</a
+                >
+                <a href="/reklama-v-metro" style="text-decoration: none"
+                  >Реклама в метро</a
+                >
+              </div>
+              <div>
+                <a href="/reklamnye-vyveski" style="text-decoration: none"
+                  >Изготовление вывесок</a
+                >
+                <a href="/reklamnye-vyveski" style="text-decoration: none"
+                  >Наши вакансии</a
+                >
+                <a href="/reklamnye-vyveski" style="text-decoration: none"
+                  >Политика конфиденциальности</a
+                >
+              </div>
+            </div>
+            <div class="footer-contacts">
+              <a href="tel:{{phone_norm}}" class="contact-item">
+                <div class="icon-circle">
+                  <div class="footer-icon-wrapper">
+                    <img src="/img/phone.png" class="icon" />
+                  </div>
+                </div>
+                <div class="contact-info">
+                  <div>8 (844) 232-55-00</div>
+                </div>
+              </a>
+              <a href="mailto:{{email}}" class="contact-item">
+                <div class="icon-circle">
+                  <div class="footer-icon-wrapper">
+                    <img src="/img/mail.png" class="icon" />
+                  </div>
+                </div>
+                <div class="contact-info">
+                  <div>info@ooh-media.ru</div>
+                </div>
+              </a>
+            </div>
+            <div class="icon-circle-mobile">
+              <a href="tel:{{phone_norm}}" class="contact-item-mobile">
+                <div class="icon-circle-mobiel-wrapper">
+                  <img src="/img/phone.png" class="icon" />
+                </div>
+              </a>
+              <a href="mailto:{{email}}" class="contact-item-mobile">
+                <div class="footer-icon-mobiel-mail">
+                  <img src="/img/mail.png" class="icon" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="/" class="footer-logos-wr">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 53"
+              style="opacity: 0.4"
+            >
+              <path
+                fill="#2A2850"
+                fill-rule="evenodd"
+                d="M0.41 27.63c0 3.62-.25 10.23 1.21 13.5.45 1.01 1.61 2.33 2.98 1.25 2.65-2.09 2.23-13.18 2.19-17.3-.03-3.08.05-6.41-.3-9.45-.24-2.09-1.21-7.15-3.92-5.42-2.65 1.7-2.19 13.53-2.18 17.42zm18.31-4.46c0 4.34-.88 22.2 4.03 19.34 2.79-1.63 2.38-12.66 2.37-16.58-.01-3.88.3-13.46-2.08-15.57-2.34-2.09-3.64 2.37-3.94 4.32-.41 2.66-.39 5.75-.38 8.5zm-9.2-20.02c.48 1.75 1.04 3.12 1.46 5.04 1.44 6.62 1.4 23.88.83 30.52-.51 5.91-.78 5.72-2.21 10.81 2.48.95 4.49 2.2 7.7 2.56-4.34-8.08-3.89-16.26-3.88-25.73.01-6.82-.24-16.84 2.66-23.25.45-.99.96-1.7 1.32-2.45-3.96.05-7.73 2.42-7.87 2.5zm16.99 48.9c2.02-.23 3.51-1.04 5.23-1.45l.01-48.48c-1.73-.4-3.27-1.35-5.34-1.43 1.09 2.22 1.3 1.83 2.23 4.93 1.88 6.28 1.8 13.97 1.78 20.53-.02 9.31.31 18.65-3.9 25.9zM43.05 40.08c.39-1.5.16-8.21.16-10.27h-6.29l-.02 17.74c1.42-.67 5.7-5.78 6.15-7.47zm.01-27.27c-.45-1.79-4.67-6.86-6.04-7.66l.03 17.53h6.16c.01-2.1.26-8.27-.15-9.87z"
+              />
+              <text
+                x="56"
+                y="29"
+                font-family="Rubik, sans-serif"
+                font-weight="700"
+                font-size="0"
+                dominant-baseline="middle"
+                letter-spacing="0.8"
+              >
+                <tspan
+                  stroke="#9CA3AF"
+                  stroke-width="0.6"
+                  fill="transparent"
+                  font-size="36"
+                >
+                  OOH
+                </tspan>
+                <tspan fill="#2A2850" font-size="32" font-weight="800">
+                  MEDIA
+                </tspan>
+              </text>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
