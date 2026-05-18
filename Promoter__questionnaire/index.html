@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Изготовление вывесок</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wr">
+        <div class="header-inner">
+          <a href="/" class="logos-wr">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 53">
+              <path
+                fill="#2A2850"
+                fill-rule="evenodd"
+                d="M0.41 27.63c0 3.62-.25 10.23 1.21 13.5.45 1.01 1.61 2.33 2.98 1.25 2.65-2.09 2.23-13.18 2.19-17.3-.03-3.08.05-6.41-.3-9.45-.24-2.09-1.21-7.15-3.92-5.42-2.65 1.7-2.19 13.53-2.18 17.42zm18.31-4.46c0 4.34-.88 22.2 4.03 19.34 2.79-1.63 2.38-12.66 2.37-16.58-.01-3.88.3-13.46-2.08-15.57-2.34-2.09-3.64 2.37-3.94 4.32-.41 2.66-.39 5.75-.38 8.5zm-9.2-20.02c.48 1.75 1.04 3.12 1.46 5.04 1.44 6.62 1.4 23.88.83 30.52-.51 5.91-.78 5.72-2.21 10.81 2.48.95 4.49 2.2 7.7 2.56-4.34-8.08-3.89-16.26-3.88-25.73.01-6.82-.24-16.84 2.66-23.25.45-.99.96-1.7 1.32-2.45-3.96.05-7.73 2.42-7.87 2.5zm16.99 48.9c2.02-.23 3.51-1.04 5.23-1.45l.01-48.48c-1.73-.4-3.27-1.35-5.34-1.43 1.09 2.22 1.3 1.83 2.23 4.93 1.88 6.28 1.8 13.97 1.78 20.53-.02 9.31.31 18.65-3.9 25.9zM43.05 40.08c.39-1.5.16-8.21.16-10.27h-6.29l-.02 17.74c1.42-.67 5.7-5.78 6.15-7.47zm.01-27.27c-.45-1.79-4.67-6.86-6.04-7.66l.03 17.53h6.16c.01-2.1.26-8.27-.15-9.87z"
+              />
+              <text
+                x="53"
+                y="29"
+                font-family="Rubik, sans-serif"
+                font-weight="700"
+                font-size="0"
+                dominant-baseline="middle"
+                letter-spacing="0.8"
+              >
+                <tspan fill="#9CA3AF" font-size="36">OOH</tspan>
+                <tspan fill="#2A2850" font-size="36" font-weight="800">
+                  MEDIA
+                </tspan>
+              </text>
+            </svg>
+          </a>
+          <div class="nav">
+            <nav class="nav-links">
+              <a href="/vacancy" class="nav-link gradient">наши вакансии</a>
+              <a href="#" class="nav-link">info@ooh-media.ru</a>
+              <a href="#" class="nav-link">8 (844) 232-55-00</a>
+            </nav>
+            <div class="phone-btn-wr">
+              <div data-modal="callback" class="phone-btn">
+                <img
+                  src="/img/phone-svgrepo-com 1.svg"
+                  width="36"
+                  height="36"
+                  alt="Phone icon"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Burger Menu -->
+          <div class="m-menu">
+            <input type="checkbox" id="menu-toggle-checkbox" />
+            <label for="menu-toggle-checkbox" class="menu-toggle">☰</label>
+            <label for="menu-toggle-checkbox" class="menu-overlay"></label>
+            <div class="mobile-menu">
+              <div class="header-inner">
+                <a href="/" class="logos-wr">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 53">
+                    <path
+                      fill="#2A2850"
+                      fill-rule="evenodd"
+                      d="M0.41 27.63c0 3.62-.25 10.23 1.21 13.5.45 1.01 1.61 2.33 2.98 1.25 2.65-2.09 2.23-13.18 2.19-17.3-.03-3.08.05-6.41-.3-9.45-.24-2.09-1.21-7.15-3.92-5.42-2.65 1.7-2.19 13.53-2.18 17.42zm18.31-4.46c0 4.34-.88 22.2 4.03 19.34 2.79-1.63 2.38-12.66 2.37-16.58-.01-3.88.3-13.46-2.08-15.57-2.34-2.09-3.64 2.37-3.94 4.32-.41 2.66-.39 5.75-.38 8.5zm-9.2-20.02c.48 1.75 1.04 3.12 1.46 5.04 1.44 6.62 1.4 23.88.83 30.52-.51 5.91-.78 5.72-2.21 10.81 2.48.95 4.49 2.2 7.7 2.56-4.34-8.08-3.89-16.26-3.88-25.73.01-6.82-.24-16.84 2.66-23.25.45-.99.96-1.7 1.32-2.45-3.96.05-7.73 2.42-7.87 2.5zm16.99 48.9c2.02-.23 3.51-1.04 5.23-1.45l.01-48.48c-1.73-.4-3.27-1.35-5.34-1.43 1.09 2.22 1.3 1.83 2.23 4.93 1.88 6.28 1.8 13.97 1.78 20.53-.02 9.31.31 18.65-3.9 25.9zM43.05 40.08c.39-1.5.16-8.21.16-10.27h-6.29l-.02 17.74c1.42-.67 5.7-5.78 6.15-7.47zm.01-27.27c-.45-1.79-4.67-6.86-6.04-7.66l.03 17.53h6.16c.01-2.1.26-8.27-.15-9.87z"
+                    />
+                    <text
+                      x="56"
+                      y="29"
+                      font-family="Rubik, sans-serif"
+                      font-weight="700"
+                      font-size="0"
+                      dominant-baseline="middle"
+                      letter-spacing="0.8"
+                    >
+                      <tspan fill="#9CA3AF" font-size="33">OOH</tspan>
+                      <tspan fill="#2A2850" font-size="33" font-weight="800">
+                        MEDIA
+                      </tspan>
+                    </text>
+                  </svg>
+                </a>
+              </div>
+
+              <nav>
+                <ul>
+                  <li><a href="/narujnaya-reklama">Наружная реклама</a></li>
+                  <li><a href="/reklama-v-metro">Реклама в метро</a></li>
+                  <li><a href="/promo-outsource">Аутсорсинг промоутеров</a></li>
+                  <li><a href="/reklamnye-vyveski">Изготовление вывесок</a></li>
+                  <li><a href="/portfolio">Кейсы</a></li>
+                  <li><a href="/faq">Часто задаваемые вопросы</a></li>
+                  <li><a href="/vacancy">Наши вакансии</a></li>
+                </ul>
+                <hr />
+                <ul class="contacts-menu">
+                  <li>
+                    <a href="/req" class="nav-link gradient">Оставить заявку</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">info@ooh-media.ru</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">8 (844) 232-55-00</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu Tabs -->
+    <div class="menu-tabs">
+      <div class="menu-grid">
+        <a href="/narujnaya-reklama" class="menu-item">Наружная реклама</a>
+        <a href="/reklama-v-metro" class="menu-item">Реклама в метро</a>
+        <a href="/promo-outsource" class="menu-item">Аутсорсинг промоутеров</a>
+        <a href="/reklamnye-vyveski" class="menu-item">Изготовление вывесок</a>
+      </div>
+    </div>
+
+    <!-- экран 1 -->
+
+    <section class="hero-wr">
+      <div class="hero-content">
+        <div class="hero-line1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="3.8 0 313 47.4"
+            preserveAspectRatio="xMidYMid meet"
+            class="hero-text1"
+          >
+            <text
+              x="5"
+              y="42.5"
+              font-family="Rubik, sans-serif"
+              font-weight="bold"
+              font-size="36"
+              text-transform="uppercase"
+              fill="#2a2850"
+            >
+              хочешь работать
+            </text>
+          </svg>
+
+          <div class="hero-boxes" style="margin-left: 64px">
+            <div class="hero-box hero-box-1"></div>
+            <div class="hero-box hero-box-2">
+              <img src="img/logo-round-white-half.svg" />
+            </div>
+            <div class="hero-box hero-box-3">
+              <img
+                src="/img/Promoter__questionnaire1.png"
+                alt="Person dancing"
+                class="dancing-person"
+              />
+            </div>
+          </div>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="3.8 0 620 60.4"
+          preserveAspectRatio="xMidYMid meet"
+          class="hero-line__promoter"
+        >
+          <defs>
+            <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color: #fe8c0a; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #ed5e89; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <text
+            x="0"
+            y="58.5"
+            font-family="Rubik, sans-serif"
+            font-weight="bold"
+            font-size="80"
+            text-transform="uppercase"
+            fill="url(#textGradient)"
+          >
+            ПРОМОУТЕРОМ
+          </text>
+        </svg>
+
+        <div class="hero-line2">
+          <div class="hero-boxes-bottom">
+            <div class="hero-box-small hero-box-small-1"></div>
+            <div class="hero-box-small hero-box-small-2">
+              <img src="img/logo-round-white.svg" />
+            </div>
+            <div class="hero-box-small hero-box-small-3">
+              <img
+                src="/img/gramophone.png"
+                alt="Object"
+                class="rotated-object"
+              />
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="3.8 0 620 53.4"
+            preserveAspectRatio="xMidYMid meet"
+            class="hero-text2"
+          >
+            <text
+              x="0"
+              y="42.5"
+              font-family="Rubik, sans-serif"
+              font-weight="bold"
+              font-size="60"
+              text-transform="uppercase"
+              fill="#2a2850"
+            >
+              на промоакциях?
+            </text>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- экран 1(анкета) -->
+
+    <div class="intro__questionnaire">
+      <p>Заполняй анкету!</p>
+    </div>
+
+    <div class="form-container">
+      <div class="hp-form__left">
+        <form id="anketa-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Имя" />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Фамилию"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="patronymic"
+              name="patronymic"
+              placeholder="Отчество"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="birthdate">Дата рождения (дд.мм.гггг)</label>
+            <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              placeholder="Дата рождения (дд.мм.гггг)"
+            />
+          </div>
+
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" placeholder="Телефон" />
+          </div>
+
+          <div class="form-group">
+            <label>Гражданство</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="russia"
+                  name="citizenship"
+                  value="russia"
+                />
+                <label for="russia">России</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="belarus"
+                  name="citizenship"
+                  value="belarus"
+                />
+                <label for="belarus">Белоруссии</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="kazakhstan"
+                  name="citizenship"
+                  value="kazakhstan"
+                />
+                <label for="kazakhstan">Казахстана</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="armenia"
+                  name="citizenship"
+                  value="armenia"
+                />
+                <label for="armenia">Армении</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="kyrgyzstan"
+                  name="citizenship"
+                  value="kyrgyzstan"
+                />
+                <label for="kyrgyzstan">Кыргызстана</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="other"
+                  name="citizenship"
+                  value="other"
+                />
+                <label for="other">Другое</label>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="form-group">
+            <input type="text" id="city" name="city" placeholder="Город" />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              id="height"
+              name="height"
+              placeholder="Рост (см)"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Размер одежды</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="size1"
+                  name="clothing-size"
+                  value="40-44"
+                />
+                <label for="size1">40-44</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="size2"
+                  name="clothing-size"
+                  value="46-48"
+                />
+                <label for="size2">46-48</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="size3"
+                  name="clothing-size"
+                  value="50-52"
+                />
+                <label for="size3">50-52</label>
+              </div>
+              <div class="radio-item">
+                <input
+                  type="radio"
+                  id="size4"
+                  name="clothing-size"
+                  value="54-56"
+                />
+                <label for="size4">54-56</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="hp-form__right">
+        <div class="form-group">
+                <label>Есть мед книжка</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="medbook-active" name="medbook" value="active">
+                        <label for="medbook-active">Действующая</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="medbook-no" name="medbook" value="no">
+                        <label for="medbook-no">Нет</label>
+                    </div>
+                </div>
+                <hr />
+            </div>
+
+
+            <div class="form-group">
+                <label class="checkbox-group-label">Чем вы готовы заниматься?<br><span style="font-size: 12px; color: #999;">(выберите один или несколько вариантов ответов)</span></label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act1" name="activities" value="lobby">
+                        <label for="act1">Любая</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act2" name="activities" value="flyer-distribution">
+                        <label for="act2">Раздача листовок</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act3" name="activities" value="stickering">
+                        <label for="act3">Расклейка</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act4" name="activities" value="stickering-mailboxes">
+                        <label for="act4">Расклейка по почтовым ящикам</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act5" name="activities" value="stickering-doors">
+                        <label for="act5">Расклейка листовок под дверными авто</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act6" name="activities" value="document-distribution">
+                        <label for="act6">Распространение документов</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act7" name="activities" value="consulting">
+                        <label for="act7">Консультирование</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act8" name="activities" value="butterbrother">
+                        <label for="act8">Человек-бутерброд (спец костюм напоминающий банер)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act9" name="activities" value="tastings">
+                        <label for="act9">Дегустации (раздача пробников)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act10" name="activities" value="doll">
+                        <label for="act10">В ростовой кукле</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act11" name="activities" value="speaker">
+                        <label for="act11">С громкоговорителем</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="act12" name="activities" value="polling">
+                        <label for="act12">Анкетирование</label>
+                    </div>
+                </div>
+                <hr />
+            </div>
+
+            <div class="form-group__photo">
+                <label>Фото в полный рост</label>
+                <p class="file-hint">Загрузите файл в формате JPG или PNG.<br>Размер файла — не более 15 МБ</p>
+                <div class="file-upload-wrapper">
+                    <input type="file" id="photo" name="photo" accept="image/jpeg,image/png" class="file-input">
+                    <label for="photo" class="file-upload-label">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <span class="file-text">Добавить файл</span>
+                    </label>
+                    <div class="file-name" id="file-name"></div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button">Отправить заявку</button>
+            
+            <p class="privacy-notice">Нажимая кнопку «Отправить заявку» вы подтверждаете <a href="#">Политику конфиденциальности</a> и даете <a href="#">согласие на обработку персональных данных</a></p>
+        </form>
+    </div>
+          <div class="form__box__img">
+        <div class="form__box__logo">
+          <img src="/img//questionnaire__logo.png" alt="logo">
+        </div>
+        <div class="form__box__color"></div>
+        <div class="form__box__girl">
+          <img src="/img/Promoter__questionnaire2.png" alt="girl">
+        </div>
+      </div>
+      </div>
+
+      <!--footer-->
+
+      <footer>
+      <div id="footer">
+        <div class="footer-title">
+          <h3>
+            Хотите заказать наружную рекламу? Оставьте заявку —<br />
+            и мы поможем привлечь новых клиентов!
+          </h3>
+        </div>
+
+        <div class="footer-wr">
+          <div class="footer-contacts-content">
+            <div class="work-schedule">
+              <div class="work-schedule-header">ГРАФИК РАБОТЫ:</div>
+              <div class="info-section">
+                <div>Пн. – Пт. с 9:00 до 18:00</div>
+                <div>г. Волгоград, ул Академическая, влд. 14/1, офис 306</div>
+                <div>
+                  <a href="/vacancy" style="text-decoration: none"
+                    >Наши вакансии</a
+                  >
+                </div>
+                <div class="link-item">
+                  <a href="/policy" style="text-decoration: none"
+                    >Политика конфиденциальности</a
+                  >
+                </div>
+              </div>
+              <div class="info-section-mobile">
+                <div>
+                  Пн. – Пт.<br />
+                  с 9:00 до 18:00
+                </div>
+                <div>г. Волгоград, ул Академическая, влд. 14/1, офис 306</div>
+              </div>
+            </div>
+            <div class="footer-services">
+              <a href="/narujnaya-reklama">Наружная реклама</a>
+              <a href="/reklama-v-metro">Реклама в метро</a>
+              <a href="/promo-outsource">Аутсорсинг промоутеров</a>
+              <a href="/reklamnye-vyveski">Изготовление вывесок</a>
+            </div>
+            <div class="footer-services-mobile">
+              <div>
+                <a href="/narujnaya-reklama" style="text-decoration: none"
+                  >Наружная реклама</a
+                >
+                <a href="/promo-outsource" style="text-decoration: none"
+                  >Аутсорсинг промоутеров</a
+                >
+                <a href="/reklama-v-metro" style="text-decoration: none"
+                  >Реклама в метро</a
+                >
+              </div>
+              <div>
+                <a href="/reklamnye-vyveski" style="text-decoration: none"
+                  >Изготовление вывесок</a
+                >
+                <a href="/reklamnye-vyveski" style="text-decoration: none"
+                  >Наши вакансии</a
+                >
+                <a href="/reklamnye-vyveski" style="text-decoration: none"
+                  >Политика конфиденциальности</a
+                >
+              </div>
+            </div>
+            <div class="footer-contacts">
+              <a href="tel:{{phone_norm}}" class="contact-item">
+                <div class="icon-circle">
+                  <div class="footer-icon-wrapper">
+                    <img src="/img/phone.png" class="icon" />
+                  </div>
+                </div>
+                <div class="contact-info">
+                  <div>8 (844) 232-55-00</div>
+                </div>
+              </a>
+              <a href="mailto:{{email}}" class="contact-item">
+                <div class="icon-circle">
+                  <div class="footer-icon-wrapper">
+                    <img src="/img/mail.png" class="icon" />
+                  </div>
+                </div>
+                <div class="contact-info">
+                  <div>info@ooh-media.ru</div>
+                </div>
+              </a>
+            </div>
+            <div class="icon-circle-mobile">
+              <a href="tel:{{phone_norm}}" class="contact-item-mobile">
+                <div class="icon-circle-mobiel-wrapper">
+                  <img src="/img/phone.png" class="icon" />
+                </div>
+              </a>
+              <a href="mailto:{{email}}" class="contact-item-mobile">
+                <div class="footer-icon-mobiel-mail">
+                  <img src="/img/mail.png" class="icon" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="/" class="footer-logos-wr">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 53"
+              style="opacity: 0.4"
+            >
+              <path
+                fill="#2A2850"
+                fill-rule="evenodd"
+                d="M0.41 27.63c0 3.62-.25 10.23 1.21 13.5.45 1.01 1.61 2.33 2.98 1.25 2.65-2.09 2.23-13.18 2.19-17.3-.03-3.08.05-6.41-.3-9.45-.24-2.09-1.21-7.15-3.92-5.42-2.65 1.7-2.19 13.53-2.18 17.42zm18.31-4.46c0 4.34-.88 22.2 4.03 19.34 2.79-1.63 2.38-12.66 2.37-16.58-.01-3.88.3-13.46-2.08-15.57-2.34-2.09-3.64 2.37-3.94 4.32-.41 2.66-.39 5.75-.38 8.5zm-9.2-20.02c.48 1.75 1.04 3.12 1.46 5.04 1.44 6.62 1.4 23.88.83 30.52-.51 5.91-.78 5.72-2.21 10.81 2.48.95 4.49 2.2 7.7 2.56-4.34-8.08-3.89-16.26-3.88-25.73.01-6.82-.24-16.84 2.66-23.25.45-.99.96-1.7 1.32-2.45-3.96.05-7.73 2.42-7.87 2.5zm16.99 48.9c2.02-.23 3.51-1.04 5.23-1.45l.01-48.48c-1.73-.4-3.27-1.35-5.34-1.43 1.09 2.22 1.3 1.83 2.23 4.93 1.88 6.28 1.8 13.97 1.78 20.53-.02 9.31.31 18.65-3.9 25.9zM43.05 40.08c.39-1.5.16-8.21.16-10.27h-6.29l-.02 17.74c1.42-.67 5.7-5.78 6.15-7.47zm.01-27.27c-.45-1.79-4.67-6.86-6.04-7.66l.03 17.53h6.16c.01-2.1.26-8.27-.15-9.87z"
+              />
+              <text
+                x="56"
+                y="29"
+                font-family="Rubik, sans-serif"
+                font-weight="700"
+                font-size="0"
+                dominant-baseline="middle"
+                letter-spacing="0.8"
+              >
+                <tspan
+                  stroke="#9CA3AF"
+                  stroke-width="0.6"
+                  fill="transparent"
+                  font-size="36"
+                >
+                  OOH
+                </tspan>
+                <tspan fill="#2A2850" font-size="32" font-weight="800">
+                  MEDIA
+                </tspan>
+              </text>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
